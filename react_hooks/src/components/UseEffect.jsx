@@ -22,7 +22,7 @@ const UseEffect = (props) => {
     const styles = {
         Color: "yellow",
         containerUseEffect: {
-            width: "400px",
+            width: "300px",
             height: "350px",
             border: "2px solid yellow",
         },
