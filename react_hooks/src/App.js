@@ -1,6 +1,10 @@
 //import React, { useState } from "react";
 import UseState from "./components/UseState";
+import UseEffect from "./components/UseEffect";
 
+import { Steps } from "rsuite";
+
+import "rsuite/dist/rsuite.min.css";
 import "./App.css";
 
 function App() {
@@ -11,19 +15,20 @@ function App() {
             </header>
             <main className="App-main">
                 <div className="SideBar">
-                    <ul>
-                        <li>UseState</li>
-                        <li>UseEffect</li>
-                        <li>UseRef</li>
-                        <li>UseReducer</li>
-                        <li>UseContext</li>
-                        <li>UseMemo</li>
-                        <li>UseCallback</li>
-                        <li>UseLayoutEffect</li>
-                    </ul>
+                    <Steps current={1} vertical>
+                        <Steps.Item title="UseState" />
+                        <Steps.Item title="UseEffect" />
+                        <Steps.Item title="UseRef" />
+                        <Steps.Item title="UseReducer" />
+                        <Steps.Item title="UseContext" />
+                        <Steps.Item title="UseMemo" />
+                        <Steps.Item title="UseCallback" />
+                        <Steps.Item title="UseLayoutEffect" />
+                    </Steps>
                 </div>
                 <div className="Content-APIs">
                     <UseState text="UseState" />
+                    <UseEffect text="UseEffect" />
                 </div>
             </main>
             <footer className="App-footer">
